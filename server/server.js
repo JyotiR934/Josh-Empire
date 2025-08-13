@@ -10,7 +10,7 @@ const servicerouter=require("./router/service-router");
 const adminrouter=require("./router/admin-router");
 
 const corsOption={
-    origin:"http://localhost:5173",
+    origin:"https://josh-empire-client.vercel.app/",
     methods:"GET,POST,DELETE,PATCH,HEAD",
     credenials:true,
 }
