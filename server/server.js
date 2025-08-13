@@ -28,9 +28,9 @@ app.use("/api/data",servicerouter);
 app.use("/api/admin",adminrouter);
 
 
-app.get("/",(req,res)=>{
-    res.status(200).send("Welcome to room");
-})
+// app.get("/",(req,res)=>{
+//     res.status(200).send("Welcome to room");
+// })
 // app.get("/register",(req,res)=>{
 //     res.send("register here");
 // })
