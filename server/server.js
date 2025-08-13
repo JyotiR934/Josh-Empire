@@ -37,9 +37,11 @@ app.use("/api/admin",adminrouter);
 //     res.send("register here");
 // })
 app.use(errormiddleware);
-const port=4000;
+// const port=4000;
 connectDb().then(()=>{
-    app.listen(port,()=>{
-    console.log(`server running in port ${port}`);
+//     app.listen(port,()=>{
+//     console.log(`server running in port ${port}`);
+// })
+    console.log("Database connected successfully");
 })
-})
+module.exports = app;
