@@ -12,6 +12,7 @@ const adminrouter=require("./router/admin-router");
 const corsOption={
     origin:"https://josh-empire-client.vercel.app",
     methods:"GET,POST,DELETE,PATCH,HEAD",
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials:true,
 }
 //middleware
