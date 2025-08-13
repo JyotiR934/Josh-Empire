@@ -1,0 +1,512 @@
+*{
+  margin:0;
+  padding:0;
+  border-sizing:border-box;
+}
+
+.section-register {
+  
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding: 2rem;
+}
+
+.registration-container {
+  display: flex;
+  justify-content: space-between;
+  gap:10rem;
+  width: 100%;
+ 
+  
+}
+
+.registration-image {
+  flex: 1;
+  background: #e6f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.registration-image img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.registration-form {
+  flex: 1;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 1.5rem;
+
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  
+  color: #444;
+}
+
+input {
+  width: 90%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #1e90ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.4);
+}
+
+.btn {
+  width: 100%;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0077cc;
+}
+.home-container{
+  display:flex;
+  justify-content:center;
+}
+.hero-content{
+  width:70%;
+  margin:3rem;
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+  
+}
+.hero-image{
+  margin:2rem;
+}
+.btn-group{
+  display:flex;
+  gap:1rem;
+}
+.section-analytics {
+  margin:auto;
+  width:90%;
+
+  & .container {
+    background-color:gray;
+    border-radius: 1rem;
+    height:2rem;
+    
+  }
+
+  & .grid {
+    color: var(--dark-color);
+
+    & .div1 {
+      text-align: center;
+      border-right: 0.2rem solid var(--dark-color);
+
+      &:last-child {
+        border: none;
+      }
+      & h2 {
+        font-size: 4.8rem;
+      }
+      & p {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+.contact-heading{
+  margin-left:3rem;
+  display: inline-block;       
+  border-bottom: 3px solid #007BFF; 
+  margin-bottom: 1rem;           
+  font-size: 2rem;             
+  
+}
+#error-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#error-page .content {
+  background: #fff;
+  padding: 40px 60px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+#error-page .header {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #ff4d4f;
+  margin-bottom: 10px;
+}
+
+#error-page h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#error-page p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+#error-page .btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#error-page .btns a {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+#error-page .btns a:hover {
+  background-color: #0056b3;
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 10rem 3rem ;
+}
+
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height:350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  padding:1rem;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-details {
+  padding: 1rem;
+  text-align: left;
+}
+
+.provide-price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.service-description h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.service-description p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.adminuser-section {
+  padding: 2rem;
+  background: #f5f6fa;
+  min-height: 100vh;
+}
+
+.adminuser-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3436fe;
+}
+
+.adminusercard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+thead tr {
+  background-color: #eef2f3ff;
+  color: white;
+}
+
+thead td {
+  padding: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+  background-color: #e9f5ff;
+}
+
+td {
+  padding: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.btn-edit, .btn-delete {
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.btn-edit {
+  background-color: #0984e3;
+  color: white;
+  border: none;
+}
+
+.btn-edit:hover {
+  background-color: #0652dd;
+}
+
+.btn-delete {
+  background-color: #d63031;
+  color: white;
+  border: none;
+}
+
+.btn-delete:hover {
+  background-color: #b22222;
+}
+.updateuser-section {
+  display: flex;
+  justify-content: center;
+   align-items: center;
+  min-height: 90vh;
+  //background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  padding: 2rem;
+}
+
+.updateuser-container {
+  
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+  animation: fadeIn 0.6s ease-in-out;
+  background-color:#74ebd5;
+}
+
+.updateuser-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.updateuser-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+}
+
+.updateuser-form label {
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.updateuser-form input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.updateuser-form input:focus {
+  border-color: #4facfe;
+  outline: none;
+  box-shadow: 0 0 8px rgba(79, 172, 254, 0.4);
+}
+
+.updateuser-form button {
+  padding: 0.8rem;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.updateuser-form button:hover {
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+  transform: translateY(-2px);
+}
+
+.updateuser-form button:active {
+  transform: translateY(1px);
+}
+/* Section background */
+.admincontact-section {
+  padding: 2rem;
+  background: linear-gradient(to right, #eef2f3, #dfe9f3);
+  min-height: 100vh;
+}
+
+/* Heading style */
+.admincontact-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* Container */
+.admincontact-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card wrapper (grid) */
+.admincontact-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual card style */
+.admincontact-card > div {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.admincontact-card > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Text styling */
+.admincontact-card p {
+  margin: 0.5rem 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.admincontact-card p:first-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #007bff;
+}
+
+/* Delete button */
+.admincontact-card button {
+  margin-top: 1rem;
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+.admincontact-card button:hover {
+  background: #c82333;
+}
+

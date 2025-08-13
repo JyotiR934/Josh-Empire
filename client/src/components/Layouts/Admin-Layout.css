@@ -1,0 +1,72 @@
+/* Layout container */
+/* .adminpage {
+  display: flex;
+  min-height: 100vh;
+} */
+
+/* Sidebar */
+/* .admin-layout {
+  width: 230px;
+  background: linear-gradient(180deg, #2c3e50, #1a252f);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+} */
+
+/* Navigation */
+.admin-layout nav ul {
+    display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-layout nav ul li {
+  margin: 0.8rem 0;
+}
+
+/* Links */
+.admin-layout nav ul li{
+  
+  color: #ecf0f1;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Hover & Active effects */
+/* .admin-layout nav ul li a:hover {
+  background: #34495e;
+  transform: translateX(5px);
+} */
+
+/* .admin-layout nav ul li a.active {
+  background: #1abc9c;
+  color: white;
+  font-weight: bold;
+} */
+
+/* Icon styling */
+.admin-layout nav ul li a svg {
+  font-size: 1.2rem;
+}
+
+/* Main content area (Outlet) */
+.adminpage .outlet-content {
+  margin-left: 230px;
+  flex: 1;
+  padding: 2rem;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
