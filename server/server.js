@@ -38,10 +38,15 @@ app.use("/api/admin",adminrouter);
 // })
 app.use(errormiddleware);
 // const port=4000;
-connectDb().then(()=>{
-//     app.listen(port,()=>{
-//     console.log(`server running in port ${port}`);
+// connectDb().then(()=>{
+// //     app.listen(port,()=>{
+// //     console.log(`server running in port ${port}`);
+// // })
+//     console.log("Database connected successfully");
 // })
-    console.log("Database connected successfully");
-})
+connectDb().then(() => {
+  console.log("DB Connected");
+});
+
 module.exports = app;
+
