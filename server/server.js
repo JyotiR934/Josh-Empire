@@ -15,7 +15,7 @@ const corsOption={
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials:true,
 }
-//middleware
+
 
 app.use(cors(corsOption));
 app.options("*", cors(corsOption));
@@ -44,6 +44,10 @@ app.use(errormiddleware);
 // // })
 //     console.log("Database connected successfully");
 // })
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
+
 connectDb().then(() => {
   console.log("DB Connected");
 });
