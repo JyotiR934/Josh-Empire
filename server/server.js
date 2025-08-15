@@ -55,9 +55,9 @@ app.use(errormiddleware);
 (async () => {
   try {
     await connectDb();
-    console.log("✅ Database connected");
+    console.log("Database connected");
   } catch (err) {
-    console.error("❌ Database connection failed:", err);
+    console.error("Database connection failed:", err);
   }
 })();
 
