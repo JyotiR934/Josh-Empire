@@ -27,10 +27,10 @@ app.use(express.json());
 
 
 
-app.use("/api/auth",authrouter);
-app.use("/api/form",contactrouter);
-app.use("/api/data",servicerouter);
-app.use("/api/admin",adminrouter);
+// app.use("/api/auth",authrouter);
+// app.use("/api/form",contactrouter);
+// app.use("/api/data",servicerouter);
+// app.use("/api/admin",adminrouter);
 
 
 // app.get("/",(req,res)=>{
