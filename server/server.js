@@ -14,7 +14,7 @@ const adminrouter=require("./router/admin-router");
 
 const corsOption={
     origin:"https://josh-empire-client.vercel.app",
-    methods:"GET,POST,DELETE,PATCH,HEAD",
+    methods:["GET", "POST", "DELETE", "PATCH", "HEAD", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials:true,
 }
@@ -49,9 +49,18 @@ app.use(errormiddleware);
 // })
 
 
-connectDb().then(() => {
-  console.log("DB Connected");
-});
+// connectDb().then(() => {
+//   console.log("DB Connected");
+// });
+(async () => {
+  try {
+    await connectDb();
+    console.log("✅ Database connected");
+  } catch (err) {
+    console.error("❌ Database connection failed:", err);
+  }
+})();
+
 
 module.exports = app;
 
