@@ -1,8 +1,20 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css"
 import { useAuth } from "../store/auth";
+import { useState } from "react";
 export const Navbar=()=>{
     const {isloggedIn}=useAuth();
+    // const menuToggle = document.getElementById("menu-toggle");
+    // const navLinks = document.getElementById("nav-links");
+
+    // menuToggle.addEventListener("click", () => {
+    // navLinks.classList.toggle("show");
+    // });
+    const [menuOpen,setmenuOpen]=useState(false);
+    const togglemenu=()=>{
+        setmenuOpen(!menuOpen)
+    }
+
     return(
         <>
         <header>
@@ -10,8 +22,9 @@ export const Navbar=()=>{
                 <div className="logo-brand">
                     <NavLink to="/">MERN</NavLink>
                 </div>
+                 <div className="menu-toggle" id="menu-toggle" onClick={togglemenu}>{menuOpen?"✖" : "☰"}</div>
                 <nav>
-                    <ul>
+                    <ul id="nav-links" className={menuOpen?"show":""}>
                         <li>
                             <NavLink to="/">Home</NavLink>
                         </li>
@@ -38,8 +51,12 @@ export const Navbar=()=>{
                         
                     </ul>
                 </nav>
+                
             </div>
         </header>
+        
+           
+       
         </>
     )
 }

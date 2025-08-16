@@ -57,3 +57,35 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  
+}
+
+/* ================= Responsive Styles ================= */
+
+/* Tablet & Mobile */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* hide links by default */
+    flex-direction: column;
+    background: purple;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  nav ul.show {
+    display: flex; /* show links when toggled */
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+}
