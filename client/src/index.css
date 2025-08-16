@@ -510,3 +510,53 @@ td {
   background: #c82333;
 }
 
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .registration-container {
+    gap: 2rem;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .registration-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .registration-image img {
+    max-width: 250px;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .main-heading {
+    font-size: 1.5rem;
+  }
+  input, .btn {
+    width: 100%;
+  }
+  .hero-content {
+    width: 90%;
+  }
+}
+
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.3rem;
+  }
+  .registration-form {
+    padding: 1.5rem;
+  }
+  .card {
+    height: auto;
+  }
+  .updateuser-container {
+    padding: 1.5rem;
+  }
+}
