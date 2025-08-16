@@ -40,27 +40,27 @@ app.get("/",(req,res)=>{
 //     res.send("register here");
 // })
 app.use(errormiddleware);
-// const port=4000;
-// connectDb().then(()=>{
-// //     app.listen(port,()=>{
-// //     console.log(`server running in port ${port}`);
-// // })
-//     console.log("Database connected successfully");
+const port=4000;
+connectDb().then(()=>{
+//     app.listen(port,()=>{
+//     console.log(`server running in port ${port}`);
 // })
+    console.log("Database connected successfully");
+})
 
 
 // connectDb().then(() => {
 //   console.log("DB Connected");
 // });
-(async () => {
-  try {
-    await connectDb();
-    console.log("Database connected");
-  } catch (err) {
-    console.error("Database connection failed:", err);
-  }
-})();
+// (async () => {
+//   try {
+//     await connectDb();
+//     console.log("Database connected");
+//   } catch (err) {
+//     console.error("Database connection failed:", err);
+//   }
+// })();
 
 
-module.exports = app;
+// module.exports = app;
 
