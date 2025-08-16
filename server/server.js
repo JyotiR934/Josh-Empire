@@ -27,15 +27,15 @@ app.use(express.json());
 
 
 
-// app.use("/api/auth",authrouter);
-// app.use("/api/form",contactrouter);
-// app.use("/api/data",servicerouter);
-// app.use("/api/admin",adminrouter);
+app.use("/api/auth",authrouter);
+app.use("/api/form",contactrouter);
+app.use("/api/data",servicerouter);
+app.use("/api/admin",adminrouter);
 
 
-app.get("/",(req,res)=>{
-    res.status(200).send("Welcome to room");
-})
+// app.get("/",(req,res)=>{
+//     res.status(200).send("Welcome to room");
+// })
 // app.get("/register",(req,res)=>{
 //     res.send("register here");
 // })
@@ -52,14 +52,14 @@ app.use(errormiddleware);
 // connectDb().then(() => {
 //   console.log("DB Connected");
 // });
-// (async () => {
-//   try {
-//     await connectDb();
-//     console.log("Database connected");
-//   } catch (err) {
-//     console.error("Database connection failed:", err);
-//   }
-// })();
+(async () => {
+  try {
+    await connectDb();
+    console.log("Database connected");
+  } catch (err) {
+    console.error("Database connection failed:", err);
+  }
+})();
 
 
 module.exports = app;
