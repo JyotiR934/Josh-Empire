@@ -8,7 +8,7 @@ export const Home=()=>{
           <div className="home-container">
             <div className="hero-content">
               <p>We are the World Best IT Company</p>
-              <h1>Welcome to Thapa Technical</h1>
+              <h1>Welcome to Josh Technical</h1>
               <p>
                 Are you ready to take your business to the next level with
                 cutting-edge IT solutions? Look no further! At Thapa Technical,
